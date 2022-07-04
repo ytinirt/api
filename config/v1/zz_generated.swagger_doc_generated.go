@@ -667,6 +667,32 @@ func (ConsoleStatus) SwaggerDoc() map[string]string {
 	return map_ConsoleStatus
 }
 
+var map_ControllerManager = map[string]string{
+	"":       "ControllerManager holds cluster-wide config information to run the Kubernetes Controller Manager and influence its placement decisions. The canonical name for this config is `cluster`.\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+	"spec":   "spec holds user settable values for configuration",
+	"status": "status holds observed values from the cluster. They may not be overridden.",
+}
+
+func (ControllerManager) SwaggerDoc() map[string]string {
+	return map_ControllerManager
+}
+
+var map_ControllerManagerList = map[string]string{
+	"": "Compatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
+}
+
+func (ControllerManagerList) SwaggerDoc() map[string]string {
+	return map_ControllerManagerList
+}
+
+var map_ControllerManagerSpec = map[string]string{
+	"extendedArguments": "extendedArguments is used to configure the kube-controller-manager",
+}
+
+func (ControllerManagerSpec) SwaggerDoc() map[string]string {
+	return map_ControllerManagerSpec
+}
+
 var map_DNS = map[string]string{
 	"":       "DNS holds cluster-wide information about DNS. The canonical name is `cluster`\n\nCompatibility level 1: Stable within a major release for a minimum of 12 months or 3 minor releases (whichever is longer).",
 	"spec":   "spec holds user settable values for configuration",
