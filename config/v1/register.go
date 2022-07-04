@@ -42,6 +42,8 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 		&ClusterVersionList{},
 		&Console{},
 		&ConsoleList{},
+		&ControllerManager{},
+		&ControllerManagerList{},
 		&DNS{},
 		&DNSList{},
 		&FeatureGate{},
