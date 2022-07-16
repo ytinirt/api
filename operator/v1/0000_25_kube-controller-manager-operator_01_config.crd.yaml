@@ -108,6 +108,11 @@ spec:
                 nullable: true
                 type: object
                 x-kubernetes-preserve-unknown-fields: true
+              useEtcdLeaderElection:
+                default: false
+                description: useEtcdLeaderElection indicates that using etcd based
+                  leader election
+                type: boolean
               useMoreSecureServiceCA:
                 default: false
                 description: useMoreSecureServiceCA indicates that the service-ca.crt

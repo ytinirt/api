@@ -36,6 +36,10 @@ type KubeControllerManagerSpec struct {
 	// only have the more secure content.
 	// +kubebuilder:default=false
 	UseMoreSecureServiceCA bool `json:"useMoreSecureServiceCA"`
+
+	// useEtcdLeaderElection indicates that using etcd based leader election
+	// +kubebuilder:default=false
+	UseEtcdLeaderElection bool `json:"useEtcdLeaderElection"`
 }
 
 type KubeControllerManagerStatus struct {
